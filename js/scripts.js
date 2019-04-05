@@ -2,14 +2,69 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     // User Interface Logic
-    var inputOne = $("input#input").val();
-    var inputTwo = numberToBeep(userInput);
+    // var userInput = $("input#input").val();
+    // var translatedString = translateSentenceToPigLatin(userInput);
     $('.result').show();
+    var userInput = parseInt($("#input").val());
     $('#original').text(userInput);
+    var translatedString = convertToBeeps(userInput);
     $('#beepBoopTranslation').text(translatedString);
   });
+  // console.log(isVowel(""));
+});
 
 
+// business logic
+
+function convertToBeeps(num) {
+ var beepToBoop = ["I'm sorry, Dave. I'm afraid I can't do that",'Boop','Beep'];
+ var nums = [3,2,1]
+
+  var neo = "";
+
+  for (i = 0; i < beepToBoop.length; i++) {
+    var key = beepToBoop[i];
+    while (num >= nums[i]) {
+      neo += key;
+      num -= nums[i];
+      console.log("Num is decreased: ", num)
+    }
+  }
+ return neo;
+}
+
+// $(document).ready(function() {
+//   $("form").submit(function(event) {
+//     event.preventDefault();
+//     // User Interface Logic
+//     var inputOne = $("input#input").val();
+//     var inputTwo = numberToBeep(userInput);
+//     $('.result').show();
+//     $('#original').text(userInput);
+//     $('#beepBoopTranslation').text(translatedString);
+//   });
+//
+//
+// // // Business logic
+//   function convertToRoman(num) {
+//    var romanToNum = ['M','CM','D','CD','C','XC','L','XL','X','IX',"Im sorry Dave. I'm afraid I can't do that",'Boop','Beep'];
+//    var nums = [1000,900,500,400,100,90,50,40,5,4,3,2,1]
+//    // var nums = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
+//
+//     var roman = "";
+//
+//     for (i = 0; i < romanToNum.length; i++) {
+//       var key = romanToNum[i];
+//       // console.log("key: ", key)
+//       // console.log("value: ", romanToNum[key]);
+//       while (num >= nums[i]) {
+//         roman += key;
+//         num -= nums[i];
+//         console.log("Num is decreased: ", num)
+//       }
+//     }
+//    return roman;
+//   }
 
 
 // // Business logic

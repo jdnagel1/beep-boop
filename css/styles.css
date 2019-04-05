@@ -1,3 +1,18 @@
+.result {
+  display: none;
+}
+
+.result {
+  float: left;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.booppic {
+  float: right;
+}
 /* .result {
   display: none;
 }
