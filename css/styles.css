@@ -1,22 +1,15 @@
-.result {
-  display: none;
-}
-
-.result {
-  float: left;
-}
-
 body {
   background-color: lightgrey;
 }
 
-.booppic {
-  float: right;
-}
-/* .result {
-  display: none;
+h1 {
+  font-family: 'VT323', monospace;
 }
 
-.result {
-  float: left;
-} */
+ul {
+  font-family: 'B612 Mono', monospace;
+}
+
+label {
+  font-family: 'B612 Mono', monospace;
+}
