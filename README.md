@@ -1,5 +1,9 @@
 # _Beep Boop_
 
+#### By _Jake Nagel_
+
+https://jdnagel1.github.io/beep-boop/
+
 #### This web application takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
 
 Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
@@ -11,8 +15,6 @@ The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do th
 The number 21 should be replaced with "Boop".
 The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 The user is also able to enter a new number and see new results over and over again._
-
-#### By _Jake Nagel_
 
 
 ## Setup/Installation Requirements
