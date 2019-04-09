@@ -29,25 +29,21 @@ _No Known Bugs_
 
 ## Specs
 
-Spec: The program returns a range of numbers from 0 to the users inputted number
-Input: "4"
-Output: "0, 1, 2, 3, 4"
+Spec: It should replace all numbers that contain 1 with "beep".
+input: 1
+output: 0,"beep"
 
-input: create number variable for all user input
-output: false
+Spec: It should replace all numbers that contain 2 with "boop".
+input: 2
+output: 0,1,"boop"
 
-input: make a loop that stores user input into array
-output: 1,2,3,4,5
+Spec: It should replace all numbers that contain 3 with "I'm sorry, Dave. I'm afraid I can't do that.!"
+input: 3
+output: 0,1,2,"I'm sorry, Dave. I'm afraid I can't do that.!"
 
-input: replace all numbers that contain 1
-output: beep
-
-input: replace all numbers that contain 2
-output: boop
-
-input: replace all numbers that contain 3
-output: "I'm sorry, Dave. I'm afraid I can't do that.!"
-
+Spec: A user should be able to enter a new number and see new results over and over again.
+input: 5
+output: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5
 
 ## Support and contact details
 
